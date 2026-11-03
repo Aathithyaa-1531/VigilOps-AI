@@ -1,0 +1,25 @@
+{
+  "name": "vigilops-ai",
+  "version": "1.0.0",
+  "description": "VigilOps AI - Autonomous Real-Time Industrial Safety Monitoring System",
+  "scripts": {
+    "start": "concurrently -n \"backend,ai,frontend\" -c \"blue,green,magenta\" \"npm run start:backend\" \"npm run start:ai\" \"npm run start:frontend\"",
+    "start:backend": "npm --prefix backend start",
+    "start:frontend": "npm --prefix frontend run dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "start:ai": "cd ai_services && ./venv/bin/uvicorn main:app --host 0.0.0.0 --port 8000 --reload"
+  },
+  "keywords": [
+    "industrial-safety",
+    "yolov8",
+    "langgraph",
+    "scikit-learn",
+    "rag",
+    "osha"
+  ],
+  "author": "VigilOps AI Team",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}

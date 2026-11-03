@@ -1,0 +1,16 @@
+{
+  "model_architecture": "YOLOv8 Nano (PPE Detection)",
+  "dataset": "PPE_DATASET_YOLOv8 + Safety Helmet and Reflective Jacket",
+  "classes": [
+    "hard_hat",
+    "no_helmet",
+    "reflective_jacket",
+    "no_vest",
+    "person",
+    "forklift",
+    "crane"
+  ],
+  "mAP50": 0.1327,
+  "mAP50_95": 0.1016,
+  "weights_path": "/Applications/ALL FILES/VigilOps AI/ai_services/models/yolov8n_ppe.pt"
+}

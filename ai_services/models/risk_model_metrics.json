@@ -1,0 +1,64 @@
+{
+  "dataset": "Industrial Safety and Health Analytics Database (.csv)",
+  "samples_total": 3500,
+  "train_samples": 2800,
+  "test_samples": 700,
+  "accuracy": 0.9986,
+  "cv_mean_accuracy": 1.0,
+  "feature_importances": {
+    "violation_duration": 0.1751,
+    "proximity_score": 0.373,
+    "hazard_severity": 0.4509,
+    "worker_speed": 0.001
+  },
+  "classification_report": {
+    "LOW (0)": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 245.0
+    },
+    "MODERATE (1)": {
+      "precision": 1.0,
+      "recall": 0.993006993006993,
+      "f1-score": 0.9964912280701754,
+      "support": 143.0
+    },
+    "CRITICAL (2)": {
+      "precision": 0.9968051118210862,
+      "recall": 1.0,
+      "f1-score": 0.9984,
+      "support": 312.0
+    },
+    "accuracy": 0.9985714285714286,
+    "macro avg": {
+      "precision": 0.9989350372736955,
+      "recall": 0.9976689976689976,
+      "f1-score": 0.9982970760233917,
+      "support": 700.0
+    },
+    "weighted avg": {
+      "precision": 0.9985759926973984,
+      "recall": 0.9985714285714286,
+      "f1-score": 0.9985700651629074,
+      "support": 700.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      245,
+      0,
+      0
+    ],
+    [
+      0,
+      142,
+      1
+    ],
+    [
+      0,
+      0,
+      312
+    ]
+  ]
+}

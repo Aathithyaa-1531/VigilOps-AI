@@ -1,0 +1,57 @@
+# ==============================================================================
+# VigilOps AI - Git Ignore Configuration
+# ==============================================================================
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Dependencies
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+venv/
+ai_services/venv/
+env/
+.venv/
+
+# Environment Variables & Secrets (CRITICAL: Do NOT commit production credentials)
+.env
+*.env
+.env.*
+!.env.example
+backend/.env
+
+# Python Cache & Bytecode
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# Build Artifacts
+dist/
+frontend/dist/
+build/
+
+# Heavy Datasets & Training Run Artifacts
+ai_services/datasets/
+ai_services/runs/
+runs/
+*.log
+
+# Large Files Exceeding GitHub's 100MB Limit
+sample_audit_videos/five_minute_ppe_audit.mp4
+
+# Local Incident & Dispatch State (Optional runtime data)
+backend/data/dispatch_history.json
+backend/data/incidents.json

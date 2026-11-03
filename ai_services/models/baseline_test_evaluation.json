@@ -1,0 +1,57 @@
+{
+  "all_classes_mAP50": 0.40729457758920595,
+  "all_classes_mAP50_95": 0.3373453061505337,
+  "mean_precision": 0.9671119928764546,
+  "mean_recall": 0.31215064361793843,
+  "per_class": {
+    "hard_hat": {
+      "class_id": 0,
+      "precision": 1.0,
+      "recall": 0.0057,
+      "mAP50": 0.3593,
+      "mAP50_95": 0.1268
+    },
+    "no_helmet": {
+      "class_id": 1,
+      "precision": 1.0,
+      "recall": 0.0738,
+      "mAP50": 0.1592,
+      "mAP50_95": 0.1269
+    },
+    "reflective_jacket": {
+      "class_id": 2,
+      "precision": 0.9218,
+      "recall": 0.0165,
+      "mAP50": 0.0349,
+      "mAP50_95": 0.0265
+    },
+    "no_vest": {
+      "class_id": 3,
+      "precision": 1.0,
+      "recall": 0.0492,
+      "mAP50": 0.0558,
+      "mAP50_95": 0.0552
+    },
+    "person": {
+      "class_id": 4,
+      "precision": 1.0,
+      "recall": 0.0399,
+      "mAP50": 0.2519,
+      "mAP50_95": 0.086
+    },
+    "forklift": {
+      "class_id": 5,
+      "precision": 0.8974,
+      "recall": 1.0,
+      "mAP50": 0.995,
+      "mAP50_95": 0.945
+    },
+    "crane": {
+      "class_id": 6,
+      "precision": 0.9506,
+      "recall": 1.0,
+      "mAP50": 0.995,
+      "mAP50_95": 0.995
+    }
+  }
+}
